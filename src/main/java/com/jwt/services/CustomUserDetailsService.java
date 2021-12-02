@@ -10,9 +10,9 @@ import java.util.ArrayList;
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
 
-        if(username.equals("Ashitosh"))
+        if(userName.equals("Ashitosh"))
         {
             return new User("Ashitosh","Ashitosh123",new ArrayList<>());
         }
